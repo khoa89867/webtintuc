@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Trang tin tức Đại học Mở</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="./213sinhvien.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://ou.edu.vn/wp-content/uploads/2019/01/OpenUniversity.png">
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+          <!-- login -->
+        <div class="allsLogin">
+            <div class="exit" id = "exit">
+                <span>×</span>
+            </div>
+            <div class="allLogin">
+    
+           
+                <div class="fromLogin">
+                  
+                    <form class="formAll">
+                        <h1>Đăng Nhập</h1>
+                        
+                        <div class="envelope">
+                            <input placeholder="Emai/số điện thoại" type="text">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+        
+                       <div class="slash">
+                            <input id="password" type="text" placeholder="Mật khẩu">
+                            <i onclick="togglePassword()" class="fa-solid fa-eye-slash"></i>
+                       </div>
+                    
+                        <div class="checkBottom">
+                            <div>
+                                <input type="checkbox"/>
+                            </div>
+                            <div> <span>Ghi nhớ mật khẩu</span></div>
+                            <div><h5>Quên mật khẩu?</h5></div>
+                        </div>
+                       
+                        <button type="submit">Đăng nhập</button>
+                       
+                        <h3>Hoặc đăng nhập nhanh bằng các tài khoản sau</h3>
+                        <div class="typeLogin">
+                            <div>
+                                <img src="/image/Fb.svg" alt="anh khong ton tai">
+                            </div>
+                            <div>
+                                <img src="/image/google-plus.svg" alt="anh khong ton tai">
+                            </div>
+                            <div>
+                                <img src="/image/apple.svg" alt="anh khong ton tai">
+                            </div>
+        
+                        </div>
+                        <div class="linkLogin">
+                            <h4>Chưa có tài khoản?</h4>
+                            <a href="#">Đăng kí</a>
+                        </div>
+                    </form>
+        
+                </div>
+        
+                <div class="rightLogin">
+                    <div>
+                        <img src="/image/VnnId_anh.jpg">
+                        <h3 class="h3" >VietNamNet - Báo điện tử chính thống hàng đầu Việt Nam</h3>
+                    </div>
+                </div>
+        
+            </div>
+        
+          </div>
+
+            <!-- lam mo trang web -->
+          <div id="overlay" class="overlay"></div>
+      
+       <div class="container">
+            <header class="header">
+                <div> <a href="#"><img src="https://ou.edu.vn/wp-content/uploads/2016/08/Logo.png" ></a></div>
+                <div class="register"><span>Đăng nhập/ Đăng ký</span></div>
+            </header>
+            <!-- navbar -->
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li ><a href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="showLi">
+                            <a href="#">Đào tạo</a>
+                            <ul class="showUl">
+                                <li><a>Phòng đào tạo 1</a></li>
+                                <li><a>Phòng đào tạo 2</a></li>
+                                <li><a>Phòng đào tạo 3</a></li>
+                                <li><a>Phòng đào tạo 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Sinh viên</a>
+                            <ul class="showUl">
+                                <li><a>Công tác sinh viên</a></li>
+                                <li><a>Thông báo sinh viên</a></li>
+                                <li><a>Hệ thống thông tin sinh viên</a></li>
+                                <li><a>Học bổng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tuyển sinh</a></li>
+                        <li><a href="#">Hoạt động khoa học</a></li>
+                    </ul>
+                </div>
+                
+                <div class="search">
+                    <input id = "inputValue" type="search" placeholder="Tìm kiếm...">
+                    <button  id="search">Tìm kiếm</button>
+                </div>
+            </nav>
+
+            <div id="slide">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                  
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href=""><img src="/image/anh_nen.jpg" alt=""></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="/image/anh_nen.jpg" alt=""></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="/image/anh_nen.jpg" alt=""></a>
+                      </div>
+              
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+                </div>  
+            </div>
+
+  
+            <article class="acticle">
+                <div class="sldie">
+                    <h3>Hoạt động sinh viên</h3>
+                </div>
+                <div class="title">
+                    <h2 id="title-news">213 sinh viên Trường Đại học Mở Thành phố Hồ Chí Minh 
+                    được vinh danh tại buổi Lễ tuyên dương sinh viên đạt thành tích cao trong học tập và rèn luyện năm 2023</h2>
+                </div>
+                <div class="content">
+                    <p>Nhằm khích lệ tinh thần học tập và rèn luyện của sinh viên,
+                    giúp sinh viên có trải nghiệm tốt trong quá trình học tập tại Trường, ngày 30/6/2023,
+                    tại Hội trường 602, cơ sở 97 Võ Văn Tần, Quận 3, 
+                    Trường Đại học Mở Thành phố Hồ Chí Minh  đã tổ chức Lễ Tuyên dương sinh viên đạt thành tích cao trong học tập và rèn luyện năm 2023.</p>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1255-1.jpg" alt="Ảnh không tồn tại">
+                        <p>Toàn cảnh chương trình</p>
+                    </div>
+                    <p>
+                        Đây cũng là dịp nhà trường tri ân, cảm ơn sự quan tâm, giúp đỡ của các đơn vị, doanh nghiệp đã đồng hành cùng nhà trường mang đến cơ hội cho sinh viên có hoàn cảnh khó khăn,
+                        hiếu học được học tập, phát triển; khích lệ sinh viên nâng cao ý chí, quyết tâm học tập; giữ vững tinh thần cống hiến các giá trị tốt đẹp cho xã hội.
+                    </p>
+                    <p>Chương trình vinh dự với sự tham dự của TS. Lê Nguyễn Quốc Khang - Phó Hiệu trưởng nhà trường, lãnh đạo các đơn vị trong Trường cùng hơn 35 cá nhân,
+                    doanh nghiệp đã tài trợ, đồng hành cùng Quỹ hỗ trợ sinh viên Trường.</p>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1272.jpg" alt="Ảnh không tồn tại">
+                        <p>Khách mời tham dự chương trình</p>
+
+                    </div>
+                    <P>Và đặc biệt là sự có mặt của 213 sinh viên đạt thành tích cao trong học tập và rèn luyện được vinh danh tại buổi Lễ, gồm:</P>
+                    <p>– 50 sinh viên đạt danh hiệu “Sinh viên học tập xuất sắc tiêu biểu của năm 2023” – được trao cúp vinh danh</p>
+                    <p>– 151 sinh viên đạt danh hiệu “Sinh viên học tập xuất sắc của năm 2023” – được trao huy chương vinh danh.</p>
+                    <p>– 02 dự án đạt giải Khuyến khích cuộc thi “Học sinh, sinh viên với ý tưởng khởi nghiệp” lần V (2023) của Bộ Giáo dục và Đào tạo – được trao Giấy khen.</p>
+                    <p>– 06 sinh viên đạt giải nhất cuộc thi “ICAEW China and South-East Asia Business Challenge” các trường đại học (khu vực phía Nam), trong đó có 01 sinh viên đạt thêm giải Best presenter vòng khu vực Đông Nam Á và Trung Quốc – được trao Giấy khen.</p>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1442.jpg" alt="Ảnh không tồn tại">
+                        <p>Đại diện nhà trường và doanh nghiệp trao tặng kỷ niệm chương cho sinh viên</p>
+                    </div>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1751.jpg" alt="Ảnh không tồn tại">
+                    </div>
+                    <p>Phát biểu tại chương trình, TS. Lê Nguyễn Quốc Khang – Phó Hiệu trưởng nhà trường gửi lời chúc mừng đến các bạn sinh viên của các khóa,
+                    khoa đạt thành tích cao trong học tập và rèn luyện, và gửi lời cảm ơn sâu sắc nhất đến các đơn vị,
+                    doanh nghiệp đối tác đã đồng hành cùng Trường Đại học Mở Thành phố Hồ Chí Minh trong suốt thời gian qua.</p>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1268.jpg" alt="Ảnh không tồn tại">
+                        <p>TS. Lê Nguyễn Quốc Khang – Phó Hiệu trưởng nhà trường phát biểu tại buổi Lễ</p>
+                    </div>
+                    <p>TS. Lê Nguyễn Quốc Khang cho biết với mục đích hỗ trợ sinh viên trên con đường đeo đuổi ước mơ của mình,
+                    hằng năm Trường dành hơn 4000 suất học bổng với tổng giá trị lên đến hơn 30 tỷ đồng trao tặng cho sinh viên học giỏi cũng như sinh viên có hoàn cảnh khó khăn nỗ lực học tập và rèn luyện.
+                    Thông qua nhiều chính sách học bổng, nhà trường mong muốn phần nào chia sẻ khó khăn với các sinh viên thuộc diện hộ nghèo, hộ cận nghèo, khích lệ các sinh viên hiếu học, có hạnh kiểm tốt và có ý chí tiến thủ.
+                    Ông mong rằng với những sự hỗ trợ này sẽ góp phần mạnh mẽ giúp cho các em trở thành công dân hữu ích với gia đình và cống hiến được nhiều trí lực cho xã hội.</p>
+                    <p>Đáp lại sự quan tâm, giúp đỡ từ phía nhà trường và doanh nghiệp, Bạn Nguyễn Lam Tuấn – sinh viên năm 3 khoa Xây dựng đã bày tỏ niềm vui, niềm tự hào về Trường – nơi có thầy, cô, bạn bè, đặc biệt là Ban giám hiệu luôn quan tâm,
+                    thấu hiểu những khó khăn của bạn và gia đình, cũng như ghi nhận sự nỗ lực trong học tập và rèn luyện của các bạn sinh viên. Bạn cũng tin rằng chỉ có con đường học tập mới
+                    giúp bản thân có nhiều cơ hội tốt đẹp để giúp đỡ cho gia đình, đóng góp xây dựng quê hương, đất nước, giúp ích cho cộng đồng.</p>
+                    <div class="img">
+                        <img src="https://ou.edu.vn/wp-content/uploads/2023/07/IMG_1780.jpg" alt="Ảnh không tồn tại">
+                        <p>Bạn Nguyễn Lam Tuấn – sinh viên năm 3 khoa Xây dựng</p>
+                    </div>
+                    <p>Bên cạnh quỹ học bổng theo quy định của nhà nước và chính sách miễn giảm học phí, Trường Đại học Mở Thành phố Hồ Chí Minh còn có nhiều chương trình học bổng tuyển sinh như: liên kết giữa các địa phương với trường, học bổng dành cho sinh viên đạt thành tích cao trong các cuộc thi Văn – Thể – Mỹ,
+                    học bổng Khuyến khích nâng cao năng lực tiếng Anh…</p>
+                    <p>Một số chương trình học bổng tiêu biểu Trường Đại học Mở Thành phố Hồ Chí Minh đã triển khai trong các năm vừa qua:</p>
+                    <ul class="list-news">
+                        <li>Học bổng khuyến khích học tập dành cho tân sinh viên
+                            <p>Học bổng khuyến khích học tập dành cho tân sinh viên các khóa có thành tích học tập cao với nhiều đối tượng như: tuyển thẳng học sinh giỏi (toàn phần 4 năm và toàn phần 1 năm),
+                                thí sinh có thành tích cao trong học tập (mức học bổng 50%, 70% và 100% học phí), thủ khoa tuyển sinh trường (200% học phí năm thứ nhất và 100% học phí các năm tiếp theo),
+                                á khoa tuyển sinh trường (180% học phí năm thứ nhất và 100% học phí các năm tiếp theo), thủ khoa ngành (150% học phí năm thứ nhất và 100% học phí các năm tiếp theo).</p>
+                        </li>
+                        <li>Học bổng dành cho sinh viên học tập tốt, vượt khó
+                            <p>Mỗi năm học, Trường luôn dành sự quan tâm hỗ trợ sinh viên thuộc diện hộ nghèo hoặc hộ cận nghèo, hoàn cảnh kinh tế khó khăn với gần 2 tỉ đồng/năm học thông qua hai loại học bổng: Học bổng vượt khó học tập và học bổng Tiếp sức đến Trường.</p>
+                        </li>
+                        <li>Học bổng từ các đối tác, doanh nghiệp
+                            <p>Mỗi năm học, Trường triển khai nhiều chương trình học bổng do các doanh nghiệp, tổ chức xã hội, các cá nhân tài trợ.</p>
+                            <p>Trong năm học 2022 – 2023, nhà trường đã tiếp nhận hơn 1 tỉ đồng từ các doanh nghiệp, cựu sinh viên và trao tặng nhiều suất học bổng cho các bạn sinh viên, tổ chức các chương trình, hoạt động có ý nghĩa dành cho sinh viên và cựu sinh viên.</p>
+                            <p>Ngoài ra, trường còn có các học bổng như: Học bổng Nghiên cứu khoa học; Học bổng Sinh viên 5 tốt; Học bổng Thanh niên tiên tiến làm theo lời Bác…</p>
+                        </li>
+                        <li>Miễn giảm học phí cho sinh viên nghèo
+                            <p>Bên cạnh các loại hình học bổng đa dạng hỗ trợ học tập cho sinh viên, Trường Đại học Mở Thành phố Hồ Chí Minh còn thực hiện chế độ miễn giảm học phí đối với tân sinh viên thuộc đối tượng chính sách, hộ nghèo cận nghèo, dân tộc thiểu số rất ít người… theo quy định.</p>
+                        </li>
+                    </ul>
+                    <p>Các đơn vị đưa tin về chương trình:</p>  
+                    <p>HTV : </p>
+                    <iframe width="100%" height="560px" src="https://www.youtube.com/embed/eUH5d9YLXO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Đài VOH :</p>
+                    <a href="https://voh.com.vn/giao-duc/tuyen-duong-213-sinh-vien-dat-thanh-tich-cao-trong-hoc-tap-485026.html" target="_blank"></a>
+                    <p>Báo giáo dục và thời đại:</p>
+                    <a href="https://giaoducthoidai.vn/truong-dh-mo-tphcm-vinh-danh-sinh-vien-xuat-sac-post645183.html" target="_blank"></a>
+                    <p>Cổng thông tin thành ủy:</p>
+                    <a href="https://hochiminhcity.gov.vn/-/-ai-hoc-mo-tphcm-tuyen-duong-sinh-vien-at-thanh-tich-cao-trong-hoc-tap-va-ren-luyen?redirect=%2Fhome" target="_blank"></a>
+                    <p>Link kỷ yếu lễ tuyên dương sinh viên:</p>
+                    <iframe width="100%" height="560px" src="https://www.youtube.com/embed/ms8ctVJipkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Tác giả: Thảo Anh</p>
+                </div>
+                
+            </article>
+            <footer>
+                <div class="footer">
+                    <a href="#"><img src="https://ou.edu.vn/wp-content/uploads/2016/08/Logo.png"></a>
+                    <div>
+                        <h5>Sứ mạng: Trường Đại học Mở thành phố Hồ Chí Minh thực hiện giáo dục mở,
+                         tạo bình đẳng cho mọi người trong giáo dục đại học, góp phần xây dựng xã hội học tập,
+                          nâng cao tri thức và năng lực nghề nghiệp cho người học bằng các phương thức linh hoạt,
+                           thuận tiện và hiệu quả.</h5>
+                        <h5>Tầm nhìn: Trường Đại học Mở thành phố Hồ Chí Minh phấn đấu trở thành Đại học thực hiện 
+                        giáo dục mở, định hướng ứng dụng với chất lượng cao.</h5>
+                    </div>
+
+
+                </div>
+                <div class="last-footer">
+                    <div>
+                        <h2>THÔNG TIN CHUNG</h2>
+                        <p>Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, TP. HCM.</p>
+                        <p>Điện thoại: <span>028-38364748.</span></p>
+                        <p>Fax: <span>028-39207639 hoặc 028-39207640.</span></p>
+                        <p>E-mail: <span>ou@ou.edu.vn.</span></p>
+                        <h3>Kết nối với chúng tôi</h3>
+                        <a href="https://www.facebook.com/TruongDaiHocMo">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://plus.google.com/+HoChiMinhCityOpenUniversityVN">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="https://www.youtube.com/HoChiMinhCityOpenUniversityVN">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="last-footer-child">
+                        <h2>CÁC CƠ SỞ TRỰC THUỘC</h2>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 1:</span>  97 Võ Văn Tần, P. Võ Thị Sáu, Q. 3,    TP. Hồ Chí Minh.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 2:</span>  35-37 Hồ Hảo Hớn, P. Cô Giang, Q. 1 , TP. Hồ Chí Minh.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 3:</span> 371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. Hồ Chí Minh.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 4:</span>   02 Mai Thị Lựu, P. Đa Kao, Q. 1, TP. Hồ Chí Minh.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 5:</span> 68 Lê Thị Trung, P. Phú Lợi, TP. Thủ Dầu Một,  Tỉnh Bình Dương.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 6:</span>  Đường số 9, P. Long Bình Tân, TP. Biên Hòa, Tỉnh Đồng Nai.</p>
+                        <p><i class="fa-sharp fa-solid fa-location-dot"></i> <span>Địa điểm 7:</span>  Số 04 đường Tân Định, P. Ninh Hiệp, Thị Xã Ninh Hòa, Tỉnh Khánh Hòa. </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+    <!-- scripts -->
+    <Script src="/login.js"></Script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- scripts index.js -->
+    <script src = "index.js"></script>
+</html> 

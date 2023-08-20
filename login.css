@@ -1,0 +1,183 @@
+
+.allsLogin {
+    border-radius: 5px;
+    width: 50%;
+    padding:35px;
+    background: url(/image/VnnId_Back.jpg)no-repeat scroll 0 0 transparent;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1000;
+}
+
+.allLogin {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+   
+}
+
+.allLogin > div {
+width: 50%;
+}
+
+.fromLogin h1{
+    text-align: center;
+    color: #447ec5;
+    font-size: 30px;
+}
+
+.fromLogin > form {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #dddd;
+    padding:10%;
+}
+
+.formAll  > div{
+    width: 100%;
+    margin-bottom: 5%;
+}
+.h3 {
+    text-align: center;
+}
+.formAll input {
+    width: 100%;
+    margin-top: 5%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    
+}
+
+.formAll > button {
+    background-color:#447ec5;
+    border: 1px solid #447ec5;
+    color:  white;
+    font-size:15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.checkBottom {
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+.checkBottom > div:last-child {
+margin-left: auto;
+
+
+}
+.checkBottom > div:last-child > h5 {
+    font-weight: 300;
+    color: #999999;
+    font-size: 14px;
+}
+
+.checkBottom > div:nth-child(2) {
+    margin-left: 10px;
+}
+.checkBottom > div:nth-child(2) > span {
+    font-size: 14px;
+}
+
+
+.formAll > h3 {
+    text-align: center;
+    font-size:13px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.typeLogin {
+    display: flex;
+    justify-content: center;
+    padding:3px;
+}
+.typeLogin > div {
+    width: 13%;
+    margin: 3%;
+}
+
+.typeLogin > div img {
+    width: 100%;
+}
+.linkLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.linkLogin > a {
+    margin-left: 5px;
+}
+
+.rightLogin {
+    position: relative;
+    width: 100%;
+    border: 1px solid #dddd;
+    background: url(/image/VnnId_Back.jpg)no-repeat scroll 0 0 transparent;
+}
+.rightLogin img {
+    width: 100%;
+}
+
+.rightLogin h3 {
+    position:absolute;
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.linkLogin > h4{
+    font-size:15px;
+    font-weight: 400;
+    margin: 0px;
+    padding:5px;
+    font-family: "Helvetica Neue",;
+}
+.exit {
+    position: absolute;
+    top: -10px;
+    right: 3px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.exit > span {
+    font-size: 35px;
+    font-weight:500;
+}
+
+.envelope {
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid #AAAAAA;
+
+}
+.slash {
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid #AAAAAA;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    display: none;
+    z-index: 999;
+}
